@@ -47,8 +47,8 @@ repo = 'elzr/vim-json'
 [[plugins]]
 repo = 'vim-jp/autofmt'
 
-[[plugins]]
-repo = 'rcmdnk/vim-markdown'
+# [[plugins]]
+# repo = 'rcmdnk/vim-markdown'
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
