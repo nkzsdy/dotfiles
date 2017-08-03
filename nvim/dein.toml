@@ -1,15 +1,15 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-[[plugins]]
-repo = 'Shougo/denite.nvim'
+# [[plugins]]
+# repo = 'Shougo/denite.nvim'
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 hook_add = 'let g:deoplete#enable_at_startup = 1'
 
-[[plugins]]
-repo = 'tpope/vim-fugitive'
+# [[plugins]]
+# repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
@@ -44,8 +44,8 @@ repo = 'cespare/vim-toml'
 [[plugins]]
 repo = 'elzr/vim-json'
 
-[[plugins]]
-repo = 'vim-jp/autofmt'
+# [[plugins]]
+# repo = 'vim-jp/autofmt'
 
 # [[plugins]]
 # repo = 'rcmdnk/vim-markdown'
@@ -53,8 +53,8 @@ repo = 'vim-jp/autofmt'
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
-[[plugins]]
-repo = 'mattn/webapi-vim'
+# [[plugins]]
+# repo = 'mattn/webapi-vim'
 
 [[plugins]]
 repo = 'jelera/vim-javascript-syntax'
