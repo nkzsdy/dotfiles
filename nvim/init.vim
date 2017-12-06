@@ -54,6 +54,10 @@ let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 "End ale settings-------------------------
 
+"Set alius--------------------------------
+:command Jq %!jq '.'
+"-----------------------------------------
+
 "emmet settings---------------------------
 let g:user_emmet_settings = {
 \ 'variables': {
@@ -96,6 +100,8 @@ set hidden
 set showcmd
 " マウスを使えるようにする
 " set mouse=a
+" ヤンク時クリップボードにもコピー
+set clipboard+=unnamedplus
 
 " 見た目系
 " カラースキーム

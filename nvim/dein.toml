@@ -8,8 +8,8 @@ repo = 'Shougo/dein.vim'
 repo = 'Shougo/deoplete.nvim'
 hook_add = 'let g:deoplete#enable_at_startup = 1'
 
-# [[plugins]]
-# repo = 'tpope/vim-fugitive'
+[[plugins]]
+repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
@@ -73,3 +73,9 @@ repo = 'tpope/vim-rails'
 
 [[plugins]]
 repo = 'slim-template/vim-slim'
+
+[[plugins]]
+repo = 'posva/vim-vue'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
