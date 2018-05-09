@@ -1,9 +1,6 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-# [[plugins]]
-# repo = 'Shougo/denite.nvim'
-
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 hook_add = 'let g:deoplete#enable_at_startup = 1'
@@ -21,7 +18,46 @@ repo = 'Yggdroot/indentLine'
 repo = 'Townk/vim-autoclose'
 
 [[plugins]]
-repo = 'w0rp/ale'
+repo = 'neovim/node-host'
+on_ft = ['javascript', 'javascript.jsx']
+hook_post_update = '''
+  let g:dein#plugin.build = 'npm install'
+'''
+
+[[plugins]]
+repo = 'billyvg/tigris.nvim'
+on_ft = ['javascript', 'javascript.jsx']
+hook_post_update = '''
+  let g:dein#plugin.build = './install.sh'
+'''
+hook_add = '''
+  let g:tigris#enabled = 1
+  let g:tigris#on_the_fly_enabled = 1
+  let g:tigris#delay = 300
+'''
+
+[[plugins]]
+repo = 'MaxMEllon/vim-jsx-pretty'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'moll/vim-node'
+on_ft = ['javascript']
+
+[[plugins]]
+repo = 'myhere/vim-nodejs-complete'
+on_ft = ['javascript']
+hook_add = '''
+  setl omnifunc=jscomplete#CompleteJS
+  if !exists('g:neocomplcache_omni_functions')
+    let g:neocomplcache_omni_functions = {}
+  endif
+  let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
+  let g:node_usejscomplete = 1
+'''
+
+[[plugins]]
+repo = 'w0rp/ale.git'
 
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
@@ -35,8 +71,8 @@ repo = 'itchyny/lightline.vim'
 [[plugins]]
 repo = 'hail2u/vim-css3-syntax'
 
-[[plugins]]
-repo = 'jiangmiao/simple-javascript-indenter'
+# [[plugins]]
+# repo = 'jiangmiao/simple-javascript-indenter'
 
 [[plugins]]
 repo = 'cespare/vim-toml'
@@ -44,20 +80,11 @@ repo = 'cespare/vim-toml'
 [[plugins]]
 repo = 'elzr/vim-json'
 
-# [[plugins]]
-# repo = 'vim-jp/autofmt'
-
-# [[plugins]]
-# repo = 'rcmdnk/vim-markdown'
-
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
 # [[plugins]]
-# repo = 'mattn/webapi-vim'
-
-[[plugins]]
-repo = 'jelera/vim-javascript-syntax'
+# repo = 'jelera/vim-javascript-syntax'
 
 [[plugins]]
 repo = 'vim-jp/vimdoc-ja'
@@ -78,4 +105,23 @@ repo = 'slim-template/vim-slim'
 repo = 'posva/vim-vue'
 
 [[plugins]]
-repo = 'kchmck/vim-coffee-script'
+repo = 'soramugi/auto-ctags.vim'
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+
+[[plugins]]
+repo = 'dag/vim-fish'
+
+# [[plugins]]
+# repo = 'vim-jp/autofmt'
+
+# [[plugins]]
+# repo = 'rcmdnk/vim-markdown'
+
+# [[plugins]]
+# repo = 'Shougo/denite.nvim'
+
+# [[plugins]]
+# repo = 'mattn/webapi-vim'
+

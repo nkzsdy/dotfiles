@@ -23,8 +23,7 @@ endif
 " begin settings
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
-
-  " plugin list TOML
+" plugin list TOML
   let g:rc_dir    = expand('~/dotfiles/nvim')
   let s:toml      = g:rc_dir . '/dein.toml'
   let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
@@ -54,10 +53,6 @@ let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 "End ale settings-------------------------
 
-"Set alius--------------------------------
-:command Jq %!jq '.'
-"-----------------------------------------
-
 "emmet settings---------------------------
 let g:user_emmet_settings = {
 \ 'variables': {
@@ -82,6 +77,30 @@ let g:lightline = {
       \ },
       \ }
 " End lightline settings------------------
+
+" auto-ctags settings----------------------
+let g:auto_ctags = 1
+nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
+nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
+" End auto-ctags settings------------------
+
+" tigris settings--------------------------------
+let g:tigris#enabled = 1
+let g:tigris#on_the_fly_enabled = 1
+let g:tigris#delay = 300
+" -----------------------------------------------
+
+"Set alias--------------------------------
+:command Jq %!jq '.'
+"-----------------------------------------
+
+" tagbar settings--------------------------------
+nmap <F8> :TagbarToggle<CR>
+"------------------------------------------------
+
+" display json quotation
+let g:vim_json_syntax_conceal = 0
+"
 
 " general settings
 " 文字コードをUTF-8に設定
