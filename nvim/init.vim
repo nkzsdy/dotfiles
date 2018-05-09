@@ -1,6 +1,7 @@
-"python3 settings--------------------
-let g:python_host_prog3 = expand($HOME) . '/.pyenv/shims/python3'
-"end python3 settings----------------
+"python settings--------------------
+let g:python3_host_prog = $PYENV_ROOT . '/shims/python3'
+let g:python_host_prog = $PYENV_ROOT . '/shims/python2'
+"end python settings----------------
 
 "dein settings---------------------------
 if &compatible
