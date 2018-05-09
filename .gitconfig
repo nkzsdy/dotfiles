@@ -1,0 +1,23 @@
+[user]
+	name = Ryota Sakurai
+	email = nkzsdy@gmail.com
+[push]
+	default = matching
+[alias]
+  a = add
+  b = branch
+  d = diff
+  l = log
+  lg = log --graph
+  lo = log --oneline
+  log = log --oneline --graph
+  s = status
+  co = checkout
+  cm = commit
+  pl = pull
+  ps = push
+[core]
+	excludesfile = ~/.gitignore_global
+  editor = /usr/local/bin/nvim
+[ghq]
+	root = ~/dev/go/src
