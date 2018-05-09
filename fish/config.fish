@@ -40,3 +40,9 @@ set -x PYENV_ROOT $HOME/.anyenv/envs/pyenv
 set -x PATH $HOME/.anyenv/envs/pyenv/bin $PATH
 set -gx PATH $PYENV_ROOT/shims $PATH
 set -gx PYENV_SHELL fish
+
+# rbenv
+set -x RBENV_ROOT $HOME/.anyenv/envs/rbenv
+set -x PATH $HOME/.anyenv/envs/rbenv/bin $PATH
+set -gx PATH RBENV_ROOT/shims $PATH
+set -gx RBENV_SHELL fish
