@@ -1,8 +1,8 @@
 [user]
-	name = Ryota Sakurai
-	email = nkzsdy@gmail.com
+  name = Ryota Sakurai
+  email = nkzsdy@gmail.com
 [push]
-	default = matching
+  default = matching
 [alias]
   a = add
   b = branch
@@ -17,7 +17,9 @@
   pl = pull
   ps = push
 [core]
-	excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
   editor = /usr/local/bin/nvim
 [ghq]
-	root = ~/dev/go/src
+  root = ~/dev/go/src
+[includeIf "gitdir:~/dev/ruby-dev/"]
+  path = ~/dev/ruby-dev/.gitconfig_work
