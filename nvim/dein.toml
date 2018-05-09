@@ -37,26 +37,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'MaxMEllon/vim-jsx-pretty'
-on_ft = ['javascript', 'javascript.jsx']
-
-[[plugins]]
-repo = 'moll/vim-node'
-on_ft = ['javascript']
-
-[[plugins]]
-repo = 'myhere/vim-nodejs-complete'
-on_ft = ['javascript']
-hook_add = '''
-  setl omnifunc=jscomplete#CompleteJS
-  if !exists('g:neocomplcache_omni_functions')
-    let g:neocomplcache_omni_functions = {}
-  endif
-  let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
-  let g:node_usejscomplete = 1
-'''
-
-[[plugins]]
 repo = 'w0rp/ale.git'
 
 [[plugins]]
@@ -71,8 +51,8 @@ repo = 'itchyny/lightline.vim'
 [[plugins]]
 repo = 'hail2u/vim-css3-syntax'
 
-# [[plugins]]
-# repo = 'jiangmiao/simple-javascript-indenter'
+[[plugins]]
+repo = 'jiangmiao/simple-javascript-indenter'
 
 [[plugins]]
 repo = 'cespare/vim-toml'
@@ -82,9 +62,6 @@ repo = 'elzr/vim-json'
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
-
-# [[plugins]]
-# repo = 'jelera/vim-javascript-syntax'
 
 [[plugins]]
 repo = 'vim-jp/vimdoc-ja'
