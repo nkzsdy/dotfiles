@@ -1,6 +1,8 @@
 # dotfiles
 
-clone this, and exec below.
+```
+$ git clone https://github.com/nkzsdy/dotfiles ~/dotfiles
+```
 
 ## fish-shell
 ```
@@ -19,6 +21,6 @@ $ git clone https://github.com/riywo/anyenv ~/.anyenv
 $ curl https://sdk.cloud.google.com | bash
 ```
 
-
 ## TODO:
-* manage brewfile
+* brewfile
+* tmux
