@@ -1,0 +1,5 @@
+config.fish.backup
+conf.d
+functions/*
+fishd.*
+!functions/peco_change_directory.fish
