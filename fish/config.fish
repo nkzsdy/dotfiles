@@ -44,5 +44,5 @@ set -gx PYENV_SHELL fish
 # rbenv
 set -x RBENV_ROOT $HOME/.anyenv/envs/rbenv
 set -x PATH $HOME/.anyenv/envs/rbenv/bin $PATH
-set -gx PATH RBENV_ROOT/shims $PATH
+set -gx PATH $RBENV_ROOT/shims $PATH
 set -gx RBENV_SHELL fish
