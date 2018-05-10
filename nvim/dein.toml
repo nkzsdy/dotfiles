@@ -52,9 +52,6 @@ repo = 'itchyny/lightline.vim'
 repo = 'hail2u/vim-css3-syntax'
 
 [[plugins]]
-repo = 'jiangmiao/simple-javascript-indenter'
-
-[[plugins]]
 repo = 'cespare/vim-toml'
 
 [[plugins]]
@@ -101,3 +98,6 @@ repo = 'dag/vim-fish'
 
 # [[plugins]]
 # repo = 'mattn/webapi-vim'
+
+# [[plugins]]
+# repo = 'jiangmiao/simple-javascript-indenter'
