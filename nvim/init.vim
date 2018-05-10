@@ -49,6 +49,11 @@ syntax enable
 "End dein settings^-----------------------
 
 "ale settings-----------------------------
+let g:ale_linters = {
+\   'javascript.jsx': ['eslint', 'flow'],
+\   'javascript': ['eslint', 'flow']
+\}
+
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
