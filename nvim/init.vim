@@ -73,13 +73,21 @@ map <C-e> :NERDTreeToggle<CR>
 
 " lightline settings----------------------
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'seoul256',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
       \ },
       \ 'component_function': {
       \   'gitbranch': 'fugitive#head'
+      \ },
+      \ 'separator': {
+      \   'left': '⮀',
+      \   'right': '⮂'
+      \ },
+      \ 'subseparator': {
+      \   'left': '>',
+      \   'right': '<'
       \ },
       \ }
 " End lightline settings------------------
