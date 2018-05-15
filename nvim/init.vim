@@ -69,6 +69,7 @@ let g:user_emmet_settings = {
 
 "NERDTree settings------------------------
 map <C-e> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
 "End NERDTree settings--------------------
 
 " lightline settings----------------------
