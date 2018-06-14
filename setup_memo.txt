@@ -65,3 +65,34 @@ Wappalyzer
   -> https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg
 Vimium
   -> https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
+
+# fisher plugin
+nitro
+argu
+balias
+bass
+bd
+expand
+extract
+gem
+getopts
+git_util
+gitignore
+host_info
+humanize_duration
+last_job_id
+osx
+paths
+peco
+pwd_info
+pwd_is_home
+python
+rails
+segment
+spin
+ssh
+theme
+  -> bobthefish
+tmux
+vi-mode
+z
