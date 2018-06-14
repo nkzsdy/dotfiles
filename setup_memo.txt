@@ -1,0 +1,67 @@
+最初にやりたい
+
+# mac settings
+system settings
+ * ディスプレイ > 疑似解像度1440 x 900
+
+ * トラックパッド >
+    * ポイントとクリック
+      * 調べる＆データ検出 -> 3本指でタップ
+      * 副ボタンのクリック -> 2本指でクリックまたはタップ
+      * タップでクリック   -> 1本指でタップ
+
+      - すべてにチェックつける
+
+    * スクロールとズーム
+      - すべてにチェックつける
+
+    * その他のジェスチャ
+      - すべてにチェックつける
+
+ * ターミナルからkey repeatの設定を変更する
+    # キーリピート速度を1に設定（小さい程速い）
+    $ defaults write -g KeyRepeat -int 1
+
+    # キーリピート開始速度の早さを10に設定（小さい程早い）
+    $ defaults write -g InitialKeyRepeat -int 10
+
+    refs: http://skygrid.co.jp/jojakudoctor/mac-key-repeat/
+
+install Xcode
+
+# brew
+tig
+tmux
+tree
+ghq
+peco
+git
+neovim
+ctags
+jq
+fish
+
+# lang version manager
+anyenv
+
+# neovim dependencies
+python2, 3
+
+# other
+iTerm
+Alfred
+Google日本語入力
+powerline
+powerline-font
+  -> https://github.com/powerline/fonts/tree/master/SourceCodePro
+Keycast
+LICEcap
+mattermost
+
+# chrome extension
+Full page screen capture
+  -> https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl
+Wappalyzer
+  -> https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg
+Vimium
+  -> https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
