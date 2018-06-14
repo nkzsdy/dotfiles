@@ -87,6 +87,10 @@ repo = 'majutsushi/tagbar'
 [[plugins]]
 repo = 'dag/vim-fish'
 
+
+[[plugins]]
+repo = 'fatih/vim-go'
+
 # [[plugins]]
 # repo = 'vim-jp/autofmt'
 
