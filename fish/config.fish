@@ -13,6 +13,7 @@ alias vp='vagrant provision'
 alias vs='vagrant ssh'
 alias vu='vagrant up'
 alias be='bundle exec'
+alias la='ls -la'
 
 function fish_user_key_bindings
   bind \c] peco_change_directory # Bind for peco change directory to ctrl+]

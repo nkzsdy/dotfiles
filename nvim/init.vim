@@ -110,8 +110,10 @@ let g:tigris#delay = 300
 "-----------------------------------------
 
 " tagbar settings--------------------------------
-nmap <F8> :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+nnoremap <F12> :TagbarToggle<CR>
 "------------------------------------------------
+
 
 " display json quotation
 let g:vim_json_syntax_conceal = 0
@@ -182,3 +184,8 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" タブとバッファ
+map <Space> :tabnew<CR>
+map <Left> :tabp<CR>
+map <Right> :tabn<CR>
