@@ -20,6 +20,4 @@
   excludesfile = ~/.gitignore_global
   editor = /usr/local/bin/nvim
 [ghq]
-  root = ~/dev/go/src
-[includeIf "gitdir:~/dev/ruby-dev/"]
-  path = ~/dev/ruby-dev/.gitconfig_work
+  root = ~/dev/src

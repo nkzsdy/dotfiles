@@ -2,7 +2,7 @@
 set -x PATH /usr/local/bin /usr/local/sbin $PATH
 
 # golang
-set -x GOPATH $HOME/dev/go
+set -x GOPATH $HOME/go
 set -x PATH $GOPATH/bin $PATH
 
 # alias
