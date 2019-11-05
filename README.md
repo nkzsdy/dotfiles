@@ -24,3 +24,5 @@ $ curl https://sdk.cloud.google.com | bash
 ## TODO:
 * brewfile
 * tmux
+* fish -> zsh
+  * use prezto
