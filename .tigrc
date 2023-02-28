@@ -6,7 +6,3 @@ set wrap-lines = yes
 
 # 画面を垂直方向に分割する
 set vertical-split = yes
-
-# tigでrebaseできるようにする
-bind main    R !git rebase -i %(commit)
-bind diff    R !git rebase -i %(commit)
