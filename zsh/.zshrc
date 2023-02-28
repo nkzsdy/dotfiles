@@ -52,6 +52,7 @@ alias d='docker'
 alias g='git'
 alias la='ls -la'
 alias t='tig'
+alias vi='vim'
 
 ##########
 ## PATH ##
