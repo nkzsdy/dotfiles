@@ -1,28 +1,9 @@
 # dotfiles
 
-```
-$ git clone https://github.com/nkzsdy/dotfiles ~/dotfiles
-```
+only for macos
 
-## fish-shell
 ```
-$ brew install fish
-$ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisherman
-$ fisher
+git clone git@github.com:nkzsdy/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+sh setup.sh
 ```
-
-## anyenv
-```
-$ git clone https://github.com/riywo/anyenv ~/.anyenv
-```
-
-## Google Cloud SDK
-```
-$ curl https://sdk.cloud.google.com | bash
-```
-
-## TODO:
-* brewfile
-* tmux
-* fish -> zsh
-  * use prezto
