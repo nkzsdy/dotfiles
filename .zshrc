@@ -43,7 +43,10 @@ setopt hist_ignore_all_dups
 # 例： <Space>echo hello と入力
 setopt hist_ignore_space
 
-# alias
+###########
+## alias ##
+###########
+
 alias be='bundle exec'
 alias d='docker'
 alias g='git'
@@ -54,43 +57,3 @@ alias t='tig'
 ## PATH ##
 ##########
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
-
-# anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
-
-# ndenv
-export NDENV_ROOT="$HOME/.anyenv/envs/ndenv"
-export PATH="$NDENV_ROOT/bin:$PATH"
-export PATH="$NDENV_ROOT/shims:$PATH"
-eval "$(ndenv init -)"
-
-# goenv
-export GOENV_ROOT="$HOME/.anyenv/envs/goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-export PATH="$GOENV_ROOT/shims:$PATH"
-eval "$(goenv init -)"
-
-# pyenv
-export PYENV_ROOT="$HOME/.anyenv/envs/pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="$PYENV_ROOT/shims:$PATH"
-eval "$(pyenv init -)"
-
-# rbenv
-export RBENV_ROOT="$HOME/.anyenv/envs/rbenv"
-export PATH="$RBENV_ROOT/bin:$PATH"
-export PATH="$RBENV_ROOT/shims:$PATH"
-eval "$(pyenv init -)"
-
-# golang
-export GOPATH="$HOME/go"
-export PATH="$GOPATH/bin:$PATH"
-
-# mysql
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
