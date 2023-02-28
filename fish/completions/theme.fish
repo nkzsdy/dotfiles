@@ -1,1 +1,0 @@
-/Users/nkzsdy/.config/fisherman/theme/completions/theme.fish
