@@ -21,6 +21,9 @@ brew update
 # install command line tools & applications
 brew bundle
 
+# install asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.2
+
 # link dotfiles
 ln -sf ~/dotfiles/zsh/.zshrc     ~/.zshrc
 ln -sf ~/dotfiles/zsh/.zlogin    ~/.zlogin
