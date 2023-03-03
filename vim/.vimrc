@@ -4,11 +4,7 @@
 "" Vim-Plug core
 "*****************************************************************************
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
-if has('win32')&&!has('win64')
-  let curl_exists=expand('C:\Windows\Sysnative\curl.exe')
-else
-  let curl_exists=expand('curl')
-endif
+let curl_exists=expand('curl')
 
 let g:vim_bootstrap_langs = ""
 let g:vim_bootstrap_editor = "vim"				" nvim or vim
@@ -148,51 +144,6 @@ colorscheme dracula
 
 " Better command line completion 
 set wildmenu
-
-" mouse support
-set mouse=a
-
-set mousemodel=popup
-set t_Co=256
-set guioptions=egmrti
-set gfn=Monospace\ 10
-
-if has("gui_running")
-  if has("gui_mac") || has("gui_macvim")
-    set guifont=Menlo:h12
-    set transparency=7
-  endif
-else
-  let g:CSApprox_loaded = 1
-
-  " IndentLine
-  let g:indentLine_enabled = 1
-  let g:indentLine_concealcursor = ''
-  let g:indentLine_char = '┆'
-  let g:indentLine_faster = 1
-
-  
-  if $COLORTERM == 'gnome-terminal'
-    set term=gnome-256color
-  else
-    if $TERM == 'xterm'
-      set term=xterm-256color
-    endif
-  endif
-  
-endif
-
-
-if &term =~ '256color'
-  set t_ut=
-endif
-
-
-"" Disable the blinking cursor.
-set gcr=a:blinkon0
-
-set scrolloff=3
-
 
 "" Status bar
 set laststatus=2
@@ -389,21 +340,6 @@ if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
-"" Copy/Paste/Cut
-if has('unnamedplus')
-  set clipboard=unnamed,unnamedplus
-endif
-
-noremap YY "+y<CR>
-noremap <leader>p "+gP<CR>
-noremap XX "+x<CR>
-
-if has('macunix')
-  " pbcopy for OSX copy/paste
-  vmap <C-x> :!pbcopy<CR>
-  vmap <C-c> :w !pbcopy<CR><CR>
-endif
-
 "" Buffer nav
 noremap <leader>z :bp<CR>
 noremap <leader>q :bp<CR>
@@ -485,3 +421,10 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
+" map semicolon to colon in normal mode
+nnoremap ; :
+nnoremap : ;
+
+" clipboard sharing
+set clipboard=unnamed
