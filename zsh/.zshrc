@@ -60,3 +60,4 @@ alias vi='vim'
 ##########
 ## PATH ##
 ##########
+export PATH="$PATH":"$HOME/.pub-cache/bin"
