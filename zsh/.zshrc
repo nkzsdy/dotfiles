@@ -63,3 +63,4 @@ alias vi='vim'
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$PATH":"$ANDROID_HOME/cmdline-tools/latest/bin"
+export PATH="$PATH":"$ANDROID_HOME/platform-tools"
