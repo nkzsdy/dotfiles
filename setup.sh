@@ -4,6 +4,13 @@
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 
+# install powerline fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
 # setup prezto
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 setopt EXTENDED_GLOB
