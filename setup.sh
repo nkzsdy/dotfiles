@@ -32,12 +32,14 @@ brew bundle
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.2
 
 # link dotfiles
-ln -sf ~/dotfiles/zsh/.zshrc     ~/.zshrc
-ln -sf ~/dotfiles/zsh/.zlogin    ~/.zlogin
-ln -sf ~/dotfiles/zsh/.zlogout   ~/.zlogout
-ln -sf ~/dotfiles/zsh/.zpreztorc ~/.zpreztorc
-ln -sf ~/dotfiles/zsh/.zprofile  ~/.zprofile
-ln -sf ~/dotfiles/zsh/.zshenv    ~/.zshenv
-ln -sf ~/dotfiles/.gitconfig     ~/.gitconfig
-ln -sf ~/dotfiles/.tigrc         ~/.tigrc
-ln -sf ~/dotfiles/vim/.vimrc     ~/.vimrc
+ln -sf ~/dotfiles/zsh/.zshrc              ~/.zshrc
+ln -sf ~/dotfiles/zsh/.zlogin             ~/.zlogin
+ln -sf ~/dotfiles/zsh/.zlogout            ~/.zlogout
+ln -sf ~/dotfiles/zsh/.zpreztorc          ~/.zpreztorc
+ln -sf ~/dotfiles/zsh/.zprofile           ~/.zprofile
+ln -sf ~/dotfiles/zsh/.zshenv             ~/.zshenv
+ln -sf ~/dotfiles/.gitconfig              ~/.gitconfig
+ln -sf ~/dotfiles/.tigrc                  ~/.tigrc
+ln -sf ~/dotfiles/vim/.vimrc              ~/.vimrc
+mkdir ~/.config/alacritty
+ln -sf ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
