@@ -10,6 +10,11 @@ cd ~/dotfiles
 sh setup.sh
 ```
 
+## NOTE
+
+- Package Manager: Homebrew
+- Runtime Version Manager: asdf
+
 ## TODO
 
 - update vimrc
