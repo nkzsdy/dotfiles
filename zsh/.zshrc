@@ -46,6 +46,9 @@ setopt hist_ignore_space
 # asdf
 . "$HOME/.asdf/asdf.sh"
 
+# shadowenv
+eval "$(shadowenv init zsh)"
+
 ###########
 ## alias ##
 ###########
