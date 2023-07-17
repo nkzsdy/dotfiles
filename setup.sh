@@ -46,3 +46,12 @@ ln -s ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 # clone my shell commands
 git clone https://github.com/nkzsdy/mylocalbin.git $HOME/bin
+
+# tmux settings
+# true color support
+if !(type infocmp > /dev/null 2>&1); then
+  echo "[ERROR] infocmp not found. Please install for tmux true color support."
+  exit 1
+fi
+infocmp tmux-256color > ~/tmux-256color.info
+tic -xe tmux-256color ~/tmux-256color.info
