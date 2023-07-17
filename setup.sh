@@ -45,7 +45,7 @@ mkdir ~/.config/alacritty
 ln -s ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 # clone my shell commands
-git clone https://github.com/nkzsdy/mylocalbin.git $HOME/bin
+git clone https://github.com/nkzsdy/mylocalbin.git ~/bin
 
 # tmux settings
 # true color support
