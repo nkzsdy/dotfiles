@@ -6,19 +6,20 @@
 [alias]
   a = add
   b = branch
+  co = checkout
+  cm = commit
   d = diff
   l = log
   lg = log --graph
   lo = log --oneline
   log = log --oneline --graph
-  s = status
-  co = checkout
-  cm = commit
   pl = pull
   ps = push
+  s = status
+  sw = switch
 [core]
   excludesfile = ~/.gitignore_global
-  editor = /usr/local/bin/nvim
+  editor = /opt/homebrew/bin/nvim
 [ghq]
   root = ~/src
 [init]
