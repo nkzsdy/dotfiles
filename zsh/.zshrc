@@ -49,10 +49,7 @@ setopt hist_ignore_space
 # shadowenv
 eval "$(shadowenv init zsh)"
 
-###########
-## alias ##
-###########
-
+# alias
 alias be='bundle exec'
 alias d='docker'
 alias g='git'
@@ -60,11 +57,39 @@ alias la='ls -la'
 alias t='tig'
 alias vi='vim'
 
-##########
-## PATH ##
-##########
+# PATH
 export PATH="$PATH":"$HOME/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH":"$ANDROID_HOME/cmdline-tools/latest/bin"
 export PATH="$PATH":"$ANDROID_HOME/platform-tools"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
+
+# functions
+
+# cdr (Change Directory of Repository)
+# ghq管理化のリポジトリから選択して移動
+# bind: ^]
+function cdr () {
+  local selected_dir=$(ghq list -p | peco --prompt="repositories >" --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N cdr
+bindkey '^]' cdr
+
+# swb (Switch Branch)
+# カレントディレクトリのローカルブランチ一覧から選択して切替
+# bind: ^[
+function swb() {
+  local selected_branch=$(git branch --format="%(refname:short)" | peco --prompt="branches >" --query "$LBUFFER")
+  if [ -n "$selected_branch" ]; then
+    BUFFER="git switch ${selected_branch}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N swb
+bindkey '^[' swb
