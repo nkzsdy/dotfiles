@@ -1,46 +1,22 @@
-[colors.cursor]
-cursor = "CellForeground"
-text = "CellBackground"
+[general]
+live_config_reload = true
 
-[colors.primary]
-background = "#1d1f21"
-foreground = "#c5c8c6"
+[window]
+dimensions = { columns = 100, lines = 30 }
+padding = { x = 8, y = 4 }
+opacity = 1
 
-[colors.search.focused_match]
-background = "#000000"
-foreground = "#ffffff"
-
-[colors.search.matches]
-background = "#ffffff"
-foreground = "#000000"
-
-[colors.vi_mode_cursor]
-cursor = "CellForeground"
-text = "CellBackground"
-
-[env]
-TERM = "alacritty"
-title = "Alacritty"
-
-[font]
-size = 13.0
-
-[font.bold]
-family = "Source Code Pro for Powerline"
-style = "Bold"
-
-[font.bold_italic]
-family = "Source Code Pro for Powerline"
-style = "Bold Italic"
-
-[font.italic]
-family = "Source Code Pro for Powerline"
-style = "Italic"
-
-[font.normal]
-family = "Source Code Pro for Powerline"
-style = "Regular"
+[cursor]
+style = "Block"
 
 [scrolling]
-history = 10000
+history = 100000
 multiplier = 3
+
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
+bold_italic = { family = "Hack Nerd Font", style = "Bold Italic" }
+size = 13.0
+offset = { x = 0, y = 2 }
