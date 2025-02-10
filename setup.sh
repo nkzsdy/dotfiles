@@ -42,7 +42,7 @@ ln -s ~/dotfiles/.gitconfig              ~/.gitconfig
 ln -s ~/dotfiles/.tigrc                  ~/.tigrc
 ln -s ~/dotfiles/vim/.vimrc              ~/.vimrc
 mkdir ~/.config/alacritty
-ln -s ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -s ~/dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 ln -s ~/dotfiles/.tmux.conf              ~/.tmux.conf
 
 # clone my shell commands

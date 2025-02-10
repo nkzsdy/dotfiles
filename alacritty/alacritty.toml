@@ -1,0 +1,46 @@
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.primary]
+background = "#1d1f21"
+foreground = "#c5c8c6"
+
+[colors.search.focused_match]
+background = "#000000"
+foreground = "#ffffff"
+
+[colors.search.matches]
+background = "#ffffff"
+foreground = "#000000"
+
+[colors.vi_mode_cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[env]
+TERM = "alacritty"
+title = "Alacritty"
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "Source Code Pro for Powerline"
+style = "Bold"
+
+[font.bold_italic]
+family = "Source Code Pro for Powerline"
+style = "Bold Italic"
+
+[font.italic]
+family = "Source Code Pro for Powerline"
+style = "Italic"
+
+[font.normal]
+family = "Source Code Pro for Powerline"
+style = "Regular"
+
+[scrolling]
+history = 10000
+multiplier = 3
