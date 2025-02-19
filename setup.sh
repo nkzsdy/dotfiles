@@ -34,6 +34,7 @@ ln -s ~/dotfiles/zsh/.zshenv             ~/.zshenv
 ln -s ~/dotfiles/.gitconfig              ~/.gitconfig
 ln -s ~/dotfiles/.tigrc                  ~/.tigrc
 ln -s ~/dotfiles/vim/.vimrc              ~/.vimrc
+ln -s ~/dotfiles/nvim/                   ~/.config/nvim
 mkdir ~/.config/alacritty
 ln -s ~/dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 ln -s ~/dotfiles/.tmux.conf              ~/.tmux.conf
