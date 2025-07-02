@@ -43,9 +43,6 @@ setopt hist_ignore_all_dups
 # 例： <Space>echo hello と入力
 setopt hist_ignore_space
 
-# asdf
-. "$HOME/.asdf/asdf.sh"
-
 # shadowenv
 eval "$(shadowenv init zsh)"
 
@@ -80,16 +77,5 @@ function cdr () {
 zle -N cdr
 bindkey '^]' cdr
 
-# swb (Switch Branch)
-# カレントディレクトリのローカルブランチ一覧から選択して切替
-# bind: ^[
-function swb() {
-  local selected_branch=$(git branch --format="%(refname:short)" | peco --prompt="branches >" --query "$LBUFFER")
-  if [ -n "$selected_branch" ]; then
-    BUFFER="git switch ${selected_branch}"
-    zle accept-line
-  fi
-  zle clear-screen
-}
-zle -N swb
-bindkey '^[' swb
+# mise
+eval "$(mise activate zsh)"
