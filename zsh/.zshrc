@@ -10,6 +10,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# tmux auto-attach (tmux がある & tmux の外にいるときだけ)
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default 2>/dev/null || tmux new-session -s default
+fi
+
 # Customize to your needs...
 
 # zsh の補完を有効化
@@ -46,28 +51,37 @@ setopt hist_ignore_space
 # shadowenv
 eval "$(shadowenv init zsh)"
 
+# editor
+export EDITOR='nvim'
+export VISUAL='nvim'
+
 # alias
-alias be='bundle exec'
+alias e='nvim' # e is for editor
 alias d='docker'
+alias dc='docker compose'
 alias g='git'
 alias la='ls -la'
 alias t='tig'
-alias vi='vim'
+
+# golang
+export GOBIN=$HOME/go/bin
+export PATH=$GOBIN:$PATH
+
+# Android Studio
+export PATH="$PATH":"$ANDROID_HOME/cmdline-tools/latest/bin"
+export PATH="$PATH":"$ANDROID_HOME/platform-tools"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
 
 # PATH
 export PATH="$PATH":"$HOME/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
-export PATH="$PATH":"$ANDROID_HOME/cmdline-tools/latest/bin"
-export PATH="$PATH":"$ANDROID_HOME/platform-tools"
-export ANDROID_HOME="$HOME/Library/Android/sdk"
 
 # functions
 
 # cdr (Change Directory of Repository)
 # ghq管理化のリポジトリから選択して移動
-# bind: ^]
 function cdr () {
-  local selected_dir=$(ghq list -p | peco --prompt="repositories >" --query "$LBUFFER")
+  local selected_dir=$(ghq list -p | fzf --prompt="repositories > " --query "$LBUFFER")
   if [ -n "$selected_dir" ]; then
     BUFFER="cd ${selected_dir}"
     zle accept-line
@@ -76,6 +90,12 @@ function cdr () {
 }
 zle -N cdr
 bindkey '^]' cdr
+
+# histree-zsh configuration
+export PATH="${HOME}/.histree-zsh/bin:${PATH}"
+export HISTREE_DB="${HOME}/.histree.db"
+export HISTREE_LIMIT=100
+source "${HOME}/.histree-zsh/histree.zsh"
 
 # mise
 eval "$(mise activate zsh)"

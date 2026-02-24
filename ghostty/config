@@ -1,0 +1,92 @@
+# Ghostty Configuration
+# https://ghostty.org/docs/config
+
+# ========================================
+# Shell & Terminal
+# ========================================
+shell-integration = zsh
+
+# ========================================
+# Window & Appearance
+# ========================================
+# ウィンドウサイズ
+window-width = 100
+window-height = 30
+
+# パディング
+window-padding-x = 8
+window-padding-y = 4
+
+# 背景透明度
+# background-opacity = 0.95
+
+# テーマ (ダークモード)
+theme = Mellifluous
+
+# ========================================
+# Font
+# ========================================
+# フォント設定 (alacrittyと同じHack Nerd Font)
+font-family = Hack Nerd Font
+font-size = 12.5
+
+# フォントの太さ
+font-style = Regular
+font-style-bold = Bold
+font-style-italic = Italic
+font-style-bold-italic = Bold Italic
+
+# 行間調整
+adjust-cell-height = 2
+
+# ========================================
+# Cursor
+# ========================================
+cursor-style = block
+cursor-style-blink = false
+
+# ========================================
+# Scrollback
+# ========================================
+# スクロールバックバッファ
+scrollback-limit = 100000
+
+# ========================================
+# Performance
+# ========================================
+# 設定ファイルの自動リロード（デフォルトで有効なのでコメントアウト）
+# config-file = ~/.config/ghostty/config
+
+# ========================================
+# Keybindings
+# ========================================
+# macOSのネイティブなキーバインドを有効化
+macos-option-as-alt = true
+
+# タブ・ペイン操作は tmux に委譲するため Ghostty 側は無効化
+
+# フォントサイズ調整
+keybind = cmd+plus=increase_font_size:1
+keybind = cmd+minus=decrease_font_size:1
+keybind = cmd+0=reset_font_size
+
+# ========================================
+# Mouse
+# ========================================
+# マウスでのテキスト選択をクリップボードにコピー
+copy-on-select = true
+
+# ========================================
+# Misc
+# ========================================
+# ウィンドウの装飾
+window-decoration = true
+
+# タイトルバーのスタイル
+macos-titlebar-style = native
+
+# 確認ダイアログ
+confirm-close-surface = false
+
+# ベルの無効化
+shell-integration-features = cursor,sudo,title

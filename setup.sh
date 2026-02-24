@@ -21,9 +21,6 @@ brew update
 # install command line tools & applications
 brew bundle
 
-# install asdf
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.2
-
 # link dotfiles
 ln -s ~/dotfiles/zsh/.zshrc              ~/.zshrc
 ln -s ~/dotfiles/zsh/.zlogin             ~/.zlogin
@@ -37,6 +34,8 @@ ln -s ~/dotfiles/vim/.vimrc              ~/.vimrc
 ln -s ~/dotfiles/nvim/                   ~/.config/nvim
 mkdir ~/.config/alacritty
 ln -s ~/dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+mkdir -p ~/.config/ghostty
+ln -s ~/dotfiles/ghostty/config          ~/.config/ghostty/config
 ln -s ~/dotfiles/.tmux.conf              ~/.tmux.conf
 
 # clone my shell commands

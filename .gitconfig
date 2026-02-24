@@ -19,7 +19,7 @@
   sw = switch
 [core]
   excludesfile = ~/.gitignore_global
-  editor = /opt/homebrew/bin/nvim
+  editor = nvim 
 [ghq]
   root = ~/src
 [init]
