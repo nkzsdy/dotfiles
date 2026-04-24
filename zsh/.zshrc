@@ -10,8 +10,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# tmux auto-attach (tmux がある & tmux の外にいるときだけ)
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+# tmux auto-attach (tmux がある & tmux の外にいるとき & JetBrains ターミナル以外)
+if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [[ "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" ]]; then
   tmux attach-session -t default 2>/dev/null || tmux new-session -s default
 fi
 

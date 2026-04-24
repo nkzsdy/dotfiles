@@ -2,7 +2,7 @@
   name = Ryota Sakurai
   email = nkzsdy@gmail.com
 [push]
-  default = matching
+  default = simple
 [alias]
   a = add
   b = branch
@@ -17,6 +17,7 @@
   ps = push
   s = status
   sw = switch
+  wt = worktree
 [core]
   excludesfile = ~/.gitignore_global
   editor = nvim 

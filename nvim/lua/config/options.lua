@@ -13,3 +13,9 @@ opt.wrap = false
 opt.swapfile = false
 opt.backup = false
 opt.writebackup = false
+
+vim.filetype.add({
+  extension = {
+    jbuilder = "ruby",
+  },
+})
